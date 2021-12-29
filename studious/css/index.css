@@ -7,16 +7,20 @@
 }
 /* Header */
 
-#header {
-  padding: 0 !important;
-}
 .header_container {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
   display: flex;
   flex-flow: row wrap;
   padding: 25px;
   justify-content: center;
-  background-color: #002147;
-  width: 100%;
+  background-color: rgb(1, 21, 44);
 }
 .header_container .header_logo {
   margin-right: 250px;
@@ -28,7 +32,7 @@
   align-items: center !important;
   text-decoration: none;
   cursor: pointer;
-  color: #0d369f;
+  color: white;
   font-size: 26px;
 }
 .header_container .header_nav {
@@ -59,12 +63,13 @@
   position: absolute !important;
   background-color: #00000000;
   border-color: #00000000;
-  color: #0d369f;
+  color: #0563cf;
   right: 0;
   top: 0;
   margin-right: 55px;
   margin-top: 5px;
 }
+
 /* Darkmode */
 /* Light theme */
 #myBody {
@@ -102,4 +107,43 @@
 .header_container #switchButton {
   background-color: #00000000;
   border-color: #00000000;
+}
+
+/* Banner */
+
+.banner .carousel-inner .carousel-caption {
+  max-width: 600px;
+  left: 100px;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 80px;
+}
+.banner .carousel-inner .carousel-caption h1 {
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: bold;
+  color: #fff;
+  text-align: start;
+}
+.banner .carousel-inner .carousel-caption a {
+  padding: 14px 30px;
+  background-color: #fff;
+  color: #060606;
+  border-radius: 4px;
+  width: 150px;
+}
+.banner .carousel-indicators {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  margin-right: 0;
+  margin-left: -180px;
+  margin-bottom: 110px;
+}
+.banner .carousel-indicators li {
+  margin-bottom: 10px;
+}
+.ml-2,
+.mx-2 {
+  margin-left: 0.5rem !important;
 }

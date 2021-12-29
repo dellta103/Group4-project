@@ -32,9 +32,9 @@
     <link rel="stylesheet" href="./css/owl.theme.default.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
+  <body id="myBody">
     <!-- Header  -->
-    <header class="bg-white fixed-top">
+    <header class="fixed-top">
       <nav class="navbar navbar-expand-lg container">
         <a href="#" class="navbar-brand"
           ><i class="fa fa-handshake"></i><span> Masterwork</span></a
@@ -86,6 +86,12 @@
             </li>
             <li class="nav-item mr-2">
               <button class="nav-btn">SCHEDULE A DEMO</button>
+            </li>
+            <li class="nav-item">
+              <button class="dark-btn" id="switchButton">
+                <i class="fa fa-moon"></i>
+                <i class="fa fa-sun"></i>
+              </button>
             </li>
           </ul>
         </div>
@@ -1018,6 +1024,11 @@
         e.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, "300");
       });
+    </script>
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
     </script>
   </body>
 </html>

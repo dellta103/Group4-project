@@ -7,9 +7,15 @@
 body a {
   text-decoration: none;
 }
-
+#myBody {
+  background-color: white;
+  transition: 0.3s;
+}
 /* Header */
-
+header {
+  background-color: white;
+  transition: 0.3s;
+}
 .navbar-brand:visited {
   color: #dc4f72;
 }
@@ -99,10 +105,41 @@ button.navbar-toggler .icon-close {
 .navbar-nav {
   align-items: center;
 }
+#switchButton {
+  height: 28px;
+  width: 28px;
+  background-color: #d62f58;
+  border-radius: 50%;
+  border: solid 1px transparent;
+  line-height: 1;
+  color: white;
+  transition: 0.3s;
+}
+#switchButton .fa-sun {
+  display: none;
+}
+
+/* dark mode  */
+#myBody.dark {
+  background-color: black;
+}
+
+.dark #switchButton .fa-sun {
+  display: block;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+}
+.dark header ul a {
+  color: white;
+}
+.dark header {
+  background-color: black;
+}
 /* Header  */
 /* We Execute */
 .mid1 {
-  margin-top: 100px;
+  margin-top: 70px;
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
     url(../img/banner.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -182,7 +219,11 @@ button.navbar-toggler .icon-close {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
+/* dark mode  */
+.dark .mid2__top h2,
+.dark .mid2__top p:last-child {
+  color: white;
+}
 /* Why choose us */
 /* About our company */
 .mid3 {
@@ -395,7 +436,13 @@ button.navbar-toggler .icon-close {
 .mid5 .mid5__bot .mid5__card:hover img {
   filter: grayscale(0%) contrast(100%);
 }
-
+/* dark mode  */
+.dark .mid5__top h2,
+.dark .mid5__top p:last-child,
+.dark .mid5__bot .card-title,
+.dark .mid5__bot .card-text {
+  color: white;
+}
 /* We are here */
 /* Questions and Answers */
 .mid6 {
@@ -595,6 +642,14 @@ button.navbar-toggler .icon-close {
     display: none;
   }
 }
+/* dark mode  */
+.dark .mid7__top h2,
+.dark .mid7__top p:last-child,
+.dark .mid7-PC .tab__left h2,
+.dark .mid7-PC .tab__left p,
+.dark .mid7-PC #special {
+  color: white;
+}
 /* Featured Cases */
 /* Testimonials */
 .mid8 {
@@ -787,6 +842,11 @@ button.navbar-toggler .icon-close {
 .mid9-btn2:hover {
   color: white;
   background-color: #d62f58;
+}
+/* dark mode  */
+.dark .mid9__top h2,
+.dark .mid9__top p:last-child {
+  color: white;
 }
 /* Ready to build */
 /* Footer  */

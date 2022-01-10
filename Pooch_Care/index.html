@@ -16,15 +16,463 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-  </head>
-  <body>
-    <p>hello</p>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body id="myBody">
+    <!-- header  -->
+    <header class="fixed-top">
+      <div class="header__content container">
+        <nav class="navbar navbar-expand-lg container">
+          <a href="#" class="navbar-brand">Pooch Care</a>
+          <button
+            class="navbar-toggler collapsed bg-gradient"
+            data-toggle="collapse"
+            data-target="#navcollapse"
+            aria-controls="navcollapse"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon icon-expand"
+              ><i class="fa fa-bars"></i
+            ></span>
+            <span class="navbar-toggler-icon icon-close"
+              ><i class="fa fa-times"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navcollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mr-2 mt-1">
+                <a href="" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item mr-2 mt-1">
+                <a href="" class="nav-link">About</a>
+              </li>
+              <li class="nav-item mr-2 mt-1">
+                <a href="" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item mr-2 mt-1">
+                <a href="" class="nav-link">Gallery</a>
+              </li>
+              <li class="nav-item dropdown mr-2 mt-1">
+                <a
+                  href=""
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  >Blog</a
+                >
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Blog Posts</a>
+                  <a class="dropdown-item" href="#">Blog Single</a>
+                  <a class="dropdown-item" href="#">Landing Page</a>
+                </div>
+              </li>
+              <li class="nav-item mr-2 mt-1">
+                <a href="" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <button class="dark-btn" id="switchButton">
+        <i class="fa fa-moon"></i>
+        <i class="fa fa-sun"></i>
+      </button>
+    </header>
+    <!-- carousel  -->
+    <div class="mid1">
+      <div class="mid1__content">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active bg1">
+              <div class="bg1__content container">
+                <div class="row">
+                  <div class="bg1__text col-sm-12 col-md-12 col-lg-6">
+                    <h2>Quality Things For Loving Pets</h2>
+                    <p>Keep Your Pet Smiling</p>
+                    <button class="active">Read More</button>
+                    <button>Contact Us</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item bg2">
+              <div class="bg2__content container">
+                <div class="row">
+                  <div class="bg2__text col-sm-12 col-md-12 col-lg-6">
+                    <h2>Quality Things For Loving Pets</h2>
+                    <p>Keep Your Pet Smiling</p>
+                    <button class="active">Read More</button>
+                    <button>Contact Us</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item bg3">
+              <div class="bg3__content container">
+                <div class="row">
+                  <div class="bg3__text col-sm-12 col-md-12 col-lg-6">
+                    <h2>Quality Things For Loving Pets</h2>
+                    <p>Keep Your Pet Smiling</p>
+                    <button class="active">Read More</button>
+                    <button>Contact Us</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item bg4">
+              <div class="bg4__content container">
+                <div class="row">
+                  <div class="bg4__text col-sm-12 col-md-12 col-lg-6">
+                    <h2>Quality Things For Loving Pets</h2>
+                    <p>Keep Your Pet Smiling</p>
+                    <button class="active">Read More</button>
+                    <button>Contact Us</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About us  -->
+    <div class="mid2">
+      <div class="mid2__content container">
+        <p class="p1">ABOUT US</p>
+        <h2>
+          We Love Your Pets Like They Are Our <br />
+          Own
+        </h2>
+        <p class="p2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          hic odio <br />
+          voluptatem tenetur consequatur. Vestibulum ante ipsum primis in
+          faucibus orci luctus <br />
+          et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut
+          rhoncus turpis <br />
+          sodales quis.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <!-- Cards  -->
+    <div class="mid3">
+      <div class="mid3__content container">
+        <div class="row">
+          <div class="mid3__card col-lg-4 col-sm-12 col-md-6">
+            <div class="mid3__card__text">
+              <i class="fa fa-snowflake"></i>
+              <h2>Dog Walking</h2>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu <br />
+                leo non. Duis sed doloramet laoreet. <br />
+                Lorem ipsum dolor sit amet Ut <br />
+                blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="mid3__card col-lg-4 col-sm-12 col-md-6">
+            <div class="mid3__card__text">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="utensils"
+                class="svg-inline--fa fa-utensils fa-w-13"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 416 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"
+                ></path>
+              </svg>
+              <h2>Healthy Meals</h2>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu <br />
+                leo non. Duis sed doloramet laoreet. <br />
+                Lorem ipsum dolor sit amet Ut <br />
+                blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="mid3__card col-lg-4 col-sm-12 col-md-6">
+            <div class="mid3__card__text">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="sign-language"
+                class="svg-inline--fa fa-sign-language fa-w-14"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M91.434 483.987c-.307-16.018 13.109-29.129 29.13-29.129h62.293v-5.714H56.993c-16.021 0-29.437-13.111-29.13-29.129C28.16 404.491 40.835 392 56.428 392h126.429v-5.714H29.136c-16.021 0-29.437-13.111-29.13-29.129.297-15.522 12.973-28.013 28.566-28.013h154.286v-5.714H57.707c-16.021 0-29.437-13.111-29.13-29.129.297-15.522 12.973-28.013 28.566-28.013h168.566l-31.085-22.606c-12.762-9.281-15.583-27.149-6.302-39.912 9.281-12.761 27.15-15.582 39.912-6.302l123.361 89.715a34.287 34.287 0 0 1 14.12 27.728v141.136c0 15.91-10.946 29.73-26.433 33.374l-80.471 18.934a137.16 137.16 0 0 1-31.411 3.646H120c-15.593-.001-28.269-12.492-28.566-28.014zm73.249-225.701h36.423l-11.187-8.136c-18.579-13.511-20.313-40.887-3.17-56.536l-13.004-16.7c-9.843-12.641-28.43-15.171-40.88-5.088-12.065 9.771-14.133 27.447-4.553 39.75l36.371 46.71zm283.298-2.103l-5.003-152.452c-.518-15.771-13.722-28.136-29.493-27.619-15.773.518-28.137 13.722-27.619 29.493l1.262 38.415L283.565 11.019c-9.58-12.303-27.223-14.63-39.653-5.328-12.827 9.599-14.929 28.24-5.086 40.881l76.889 98.745-4.509 3.511-94.79-121.734c-9.58-12.303-27.223-14.63-39.653-5.328-12.827 9.599-14.929 28.24-5.086 40.881l94.443 121.288-4.509 3.511-77.675-99.754c-9.58-12.303-27.223-14.63-39.653-5.328-12.827 9.599-14.929 28.24-5.086 40.881l52.053 66.849c12.497-8.257 29.055-8.285 41.69.904l123.36 89.714c10.904 7.93 17.415 20.715 17.415 34.198v16.999l61.064-47.549a34.285 34.285 0 0 0 13.202-28.177z"
+                ></path>
+              </svg>
+              <h2>Pet Sitting</h2>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu <br />
+                leo non. Duis sed doloramet laoreet. <br />
+                Lorem ipsum dolor sit amet Ut <br />
+                blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="mid3__card col-lg-4 col-sm-12 col-md-6">
+            <div class="mid3__card__text">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="sitemap"
+                class="svg-inline--fa fa-sitemap fa-w-20"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M128 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32zm-24-80h192v48h48v-48h192v48h48v-57.59c0-21.17-17.23-38.41-38.41-38.41H344v-64h40c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H256c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h40v64H94.41C73.23 224 56 241.23 56 262.41V320h48v-48zm264 80h-96c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32zm240 0h-96c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32z"
+                ></path>
+              </svg>
+              <h2>Dog Activities</h2>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu <br />
+                leo non. Duis sed doloramet laoreet. <br />
+                Lorem ipsum dolor sit amet Ut <br />
+                blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="mid3__card col-lg-4 col-sm-12 col-md-6">
+            <div class="mid3__card__text">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="shower"
+                class="svg-inline--fa fa-shower fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M304,320a16,16,0,1,0,16,16A16,16,0,0,0,304,320Zm32-96a16,16,0,1,0,16,16A16,16,0,0,0,336,224Zm32,64a16,16,0,1,0-16-16A16,16,0,0,0,368,288Zm-32,32a16,16,0,1,0-16-16A16,16,0,0,0,336,320Zm-32-64a16,16,0,1,0,16,16A16,16,0,0,0,304,256Zm128-32a16,16,0,1,0-16-16A16,16,0,0,0,432,224Zm-48,16a16,16,0,1,0,16-16A16,16,0,0,0,384,240Zm-16-48a16,16,0,1,0,16,16A16,16,0,0,0,368,192Zm96,32a16,16,0,1,0,16,16A16,16,0,0,0,464,224Zm32-32a16,16,0,1,0,16,16A16,16,0,0,0,496,192Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,432,256Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,400,288Zm-64,64a16,16,0,1,0,16,16A16,16,0,0,0,336,352Zm-32,32a16,16,0,1,0,16,16A16,16,0,0,0,304,384Zm64-64a16,16,0,1,0,16,16A16,16,0,0,0,368,320Zm21.65-218.35-11.3-11.31a16,16,0,0,0-22.63,0L350.05,96A111.19,111.19,0,0,0,272,64c-19.24,0-37.08,5.3-52.9,13.85l-10-10A121.72,121.72,0,0,0,123.44,32C55.49,31.5,0,92.91,0,160.85V464a16,16,0,0,0,16,16H48a16,16,0,0,0,16-16V158.4c0-30.15,21-58.2,51-61.93a58.38,58.38,0,0,1,48.93,16.67l10,10C165.3,138.92,160,156.76,160,176a111.23,111.23,0,0,0,32,78.05l-5.66,5.67a16,16,0,0,0,0,22.62l11.3,11.31a16,16,0,0,0,22.63,0L389.65,124.28A16,16,0,0,0,389.65,101.65Z"
+                ></path>
+              </svg>
+              <h2>Pet Daycare</h2>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu <br />
+                leo non. Duis sed doloramet laoreet. <br />
+                Lorem ipsum dolor sit amet Ut <br />
+                blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="mid3__card col-lg-4 col-sm-12 col-md-6">
+            <div class="mid3__card__text">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="user-md"
+                class="svg-inline--fa fa-user-md fa-w-14"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zM104 424c0 13.3 10.7 24 24 24s24-10.7 24-24-10.7-24-24-24-24 10.7-24 24zm216-135.4v49c36.5 7.4 64 39.8 64 78.4v41.7c0 7.6-5.4 14.2-12.9 15.7l-32.2 6.4c-4.3.9-8.5-1.9-9.4-6.3l-3.1-15.7c-.9-4.3 1.9-8.6 6.3-9.4l19.3-3.9V416c0-62.8-96-65.1-96 1.9v26.7l19.3 3.9c4.3.9 7.1 5.1 6.3 9.4l-3.1 15.7c-.9 4.3-5.1 7.1-9.4 6.3l-31.2-4.2c-7.9-1.1-13.8-7.8-13.8-15.9V416c0-38.6 27.5-70.9 64-78.4v-45.2c-2.2.7-4.4 1.1-6.6 1.9-18 6.3-37.3 9.8-57.4 9.8s-39.4-3.5-57.4-9.8c-7.4-2.6-14.9-4.2-22.6-5.2v81.6c23.1 6.9 40 28.1 40 53.4 0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.3 16.9-46.5 40-53.4v-80.4C48.5 301 0 355.8 0 422.4v44.8C0 491.9 20.1 512 44.8 512h358.4c24.7 0 44.8-20.1 44.8-44.8v-44.8c0-72-56.8-130.3-128-133.8z"
+                ></path>
+              </svg>
+              <h2>Pet Grooming</h2>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu <br />
+                leo non. Duis sed doloramet laoreet. <br />
+                Lorem ipsum dolor sit amet Ut <br />
+                blandit eu leo.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Why choose us  -->
+    <div class="mid4">
+      <div class="mid4__content container">
+        <div class="row">
+          <div class="mid4__img col-lg-6 col-sm-12 col-md-12">
+            <img src="./img/ab.jpg" alt="" />
+          </div>
+          <div class="mid4__text col-lg-6 col-sm-12 col-md-12">
+            <p class="p1">WHY CHOOSE US</p>
+            <h2>What We Offer For You</h2>
+            <p class="p2">
+              Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+              eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis <br />
+              nostrud.Lorem ipsum dolor sit amet, consectetur adipisicingelit,
+            </p>
+            <ul>
+              <li>
+                Certified Groomer
+                <div class="mid4__li__content"><i class="fa fa-check"></i></div>
+              </li>
+              <li>
+                10 Years of Experience
+                <div class="mid4__li__content"><i class="fa fa-check"></i></div>
+              </li>
+              <li>
+                Pet Lover
+                <div class="mid4__li__content"><i class="fa fa-check"></i></div>
+              </li>
+              <li>
+                Customer Supports
+                <div class="mid4__li__content"><i class="fa fa-check"></i></div>
+              </li>
+              <li>
+                Veterinary Help
+                <div class="mid4__li__content"><i class="fa fa-check"></i></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Number  -->
+    <div class="mid5">
+      <div class="mid5__content container">
+        <div class="number">
+          <div class="number__content">
+            <div class="row">
+              <div class="number__item col-lg-3 col-6">
+                <h2 class="counter">730</h2>
+                <p>Happy Clients</p>
+              </div>
+              <div class="number__item col-lg-3 col-6">
+                <h2 class="counter">80</h2>
+                <p>Professionals</p>
+              </div>
+              <div class="number__item col-lg-3 col-6">
+                <h2 class="counter">812</h2>
+                <p>Adopted Pets</p>
+              </div>
+              <div class="number__item col-lg-3 col-6">
+                <h2 class="counter">90</h2>
+                <p>Awards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our plans  -->
+    <div class="mid6">
+      <div class="mid6__content container">
+        <div class="mid6__top">
+          <p>Our Plans</p>
+          <h2>Affordable Packages</h2>
+        </div>
+        <div class="mid6__bottom row">
+          <div class="mid6__card col-lg-4 col-12">
+            <h2>Free Package</h2>
+            <i class="fa fa-dollar-sign"></i><span id="card__number">0</span
+            ><span id="month">/month</span>
+            <ul>
+              <li>5 Dog Walk</li>
+              <li>3 Vet Visit</li>
+              <li>3 Pet Spa</li>
+              <li>Free Supports</li>
+              <li>Customer Support</li>
+            </ul>
+            <button>Buy Now</button>
+          </div>
+          <div class="mid6__card__mid col-lg-4 col-12">
+            <div class="mid6__card__top">
+              <div class="save"><p>SAVE 10%</p></div>
+              <h2>Standard Package</h2>
+              <i class="fa fa-dollar-sign"></i><span id="card__number">39</span
+              ><span id="month">/month</span>
+            </div>
+            <div class="mid6__card__bottom">
+              <ul>
+                <li>5 Dog Walk</li>
+                <li>3 Vet Visit</li>
+                <li>3 Pet Spa</li>
+                <li>Free Supports</li>
+                <li>Customer Support</li>
+              </ul>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div class="mid6__card col-lg-4 col-12">
+            <h2>Pro Package</h2>
+            <i class="fa fa-dollar-sign"></i><span id="card__number">89</span
+            ><span id="month">/month</span>
+            <ul>
+              <li>5 Dog Walk</li>
+              <li>3 Vet Visit</li>
+              <li>3 Pet Spa</li>
+              <li>Free Supports</li>
+              <li>Customer Support</li>
+            </ul>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
       crossorigin="anonymous"
     ></script>
     <script
@@ -37,5 +485,27 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
+    </script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.js"
+      integrity="sha512-kAKC+JNXXE28EycATN2UdxoTwR/5B4GpZnGPkzc7Z0QXGnH+BbFuhYDM7/va6ouR0NfGydfVN2alYnyfU/UCgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
   </body>
 </html>

@@ -735,7 +735,9 @@
       <div class="footer__bot container">
         <p>© 2020 Pooch Care. All Rights Reserved. Design by <a href="">W3Layouts</a> </p>
       </div>
-    </div></div>
+    </div>
+    <!-- Back to top  -->
+    <a id="button"><i class="fa fa-arrow-up"></i></a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -813,6 +815,22 @@
             },
           },
         });
+      });
+    </script>
+    <script>
+      var btn = $("#button");
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass("show");
+        } else {
+          btn.removeClass("show");
+        }
+      });
+
+      btn.on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "300");
       });
     </script>
   </body>

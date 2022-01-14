@@ -948,3 +948,38 @@ iframe {
 .dark .mid9 h2 {
   color: white;
 }
+/* back to top  */
+#button {
+  display: inline-block;
+  background-color: #189a46;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  color: white;
+  border-radius: 50%;
+}
+/* #button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 50px;
+  color: #fff;
+} */
+#button:hover {
+  cursor: pointer;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}

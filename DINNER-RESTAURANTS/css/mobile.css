@@ -1,0 +1,111 @@
+@media only screen and (max-width:767px) {
+    .sub-title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .head-title {
+        font-size: 16px;
+    }
+    /* Header */
+    .header-content {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .header-search {
+        display: none;
+    }
+    .header-bg {
+        min-height: 500px;
+    }
+    /* Banner */
+    .banner {
+        margin-top: 0;
+    }
+    .banner h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    /* Book */
+    .book-info .head-title {
+        font-size: 16px;
+    }
+    .book-info .sub-title {
+        font-size: 26px !important;
+        line-height: 36px;
+    }
+    .book-info p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .book-card .book-card-link {
+        font-size: 18px;
+    }
+    .book-info {
+        padding: 0;
+    }
+    .book-img {
+        margin-top: 30px;
+    }
+    /* Category */
+    .category .category-card a h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .category .category-card-text span {
+        font-size: 16px;
+    }
+    /* Contact */
+    .contact-content h3 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .contact .btn-fill,
+    .contact .btn-stroke {
+        padding: 10px 21px;
+    }
+    /* Count */
+    .timer {
+        font-size: 32px;
+    }
+    .count-content p {
+        font-size: 16px;
+    }
+    .counter {
+        text-align: center;
+        padding: 30px 10px;
+    }
+    .count {
+        margin-top: 0px;
+    }
+    /* Video */
+    .video .video-content {
+        min-height: 350px;
+    }
+    /* Blog */
+    .blog .sub-title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .blog a.blog-desc {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    /* Customer */
+    .client p q {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .client p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    /* Copyright */
+    /* Copyright */
+    .w3l-copyright .copy-footer-29 {
+        text-align: center;
+    }
+    .w3l-copyright .footer-list-29 ul {
+        text-align: center;
+        justify-content: center !important;
+    }
+}

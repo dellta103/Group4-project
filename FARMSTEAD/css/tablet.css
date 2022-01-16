@@ -1,0 +1,55 @@
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+    body {
+        /* background-color:cornflowerblue; */
+    }
+    .title {}
+    .title h5 {
+        font-size: 18px;
+        color: #fb811e;
+        margin-bottom: 4px;
+    }
+    .title h3 {
+        font-size: 32px;
+    }
+    /* Header */
+    .header-logo {
+        display: none;
+    }
+    /* Banner */
+    .banner-text {
+        /* margin: 0 16px; */
+    }
+    .banner-text::before {
+        font-size: 96px;
+        top: -70px;
+        left: 8px;
+    }
+    .banner .banner-text .card {
+        padding: 0px 34px;
+    }
+    .banner-text .card-title {
+        font-size: 50px;
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: bold;
+    }
+    /* Leader */
+    .leader {
+        margin-top: 880px;
+    }
+    .leader-list {
+        margin-top: 50px;
+    }
+    /* Service */
+    .service-text p {
+        padding-top: 0;
+    }
+    .service-bg::before {
+        font-size: 128px;
+        top: -50px;
+        left: 150px;
+    }
+}

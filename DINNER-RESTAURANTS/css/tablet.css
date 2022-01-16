@@ -1,0 +1,56 @@
+    @media only screen and (max-width:991px) {
+        .sub-title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        /* Banner */
+        .banner h1 {
+            font-size: 44px;
+            line-height: 50px;
+        }
+        /* Book */
+        .book-img {
+            min-height: 200px;
+        }
+        /* Service */
+        .service-item h4 a {
+            font-size: 20px;
+        }
+        /* Contact */
+        .contact-content h3 {
+            font-size: 40px;
+            line-height: 50px;
+            max-width: 100%;
+        }
+        .count {
+            margin-top: 0px;
+        }
+        .timer {
+            font-size: 32px;
+        }
+        /* Video */
+        .video .video-content {
+            min-height: 400px;
+        }
+        /* Blog */
+        .blog .sub-title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .blog a.blog-desc {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        /* Customer */
+        .client .owl-theme .owl-nav.disabled+.owl-dots {
+            margin-top: 30px;
+        }
+        /* Copyright */
+        .w3l-copyright .copy-footer-29 {
+            text-align: center;
+        }
+        .w3l-copyright .footer-list-29 ul {
+            text-align: center;
+            justify-content: center !important;
+        }
+    }
